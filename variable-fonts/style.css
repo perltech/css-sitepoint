@@ -1,0 +1,13 @@
+@font-face {
+    font-family: 'Avenir Next Variable';
+    src        : url('AvenirNext_Variable.ttf') format('truetype');
+}
+
+body {
+    font-family: 'Avenir Next Variable', sans-serif;
+}
+
+h1 {
+    font-family: 'Avenir Next Variable';
+    /* font-weight: 430; */
+}
