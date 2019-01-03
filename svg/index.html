@@ -1,0 +1,135 @@
+<!DOCTYPE html>
+<!--[if lt IE 7]>      <html class="no-js lt-ie9 lt-ie8 lt-ie7"> <![endif]-->
+<!--[if IE 7]>         <html class="no-js lt-ie9 lt-ie8"> <![endif]-->
+<!--[if IE 8]>         <html class="no-js lt-ie9"> <![endif]-->
+<!--[if gt IE 8]><!-->
+<html class="no-js">
+<!--<![endif]-->
+
+<head>
+    <meta charset="utf-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <title>SVG</title>
+    <meta name="description" content="">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="style.css">
+</head>
+
+<body>
+    <!--[if lt IE 7]>
+            <p class="browsehappy">You are using an <strong>outdated</strong> browser. Please <a href="#">upgrade your browser</a> to improve your experience.</p>
+        <![endif]-->
+
+    <svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 800 600">
+        <circle cx="400" cy="300" r="250" stroke-width="20" stroke="#f00" fill="#ff0" />
+    </svg>
+
+    <div class="mysvgbackground"></div>
+
+    <img src="myimage.svg" alt="a vector graphic" />
+
+    <svg xmlns="http://www.w3.org/2000/svg" width="400" height="300"></svg>
+
+    <!-- <p>SVG is inlined directly into the HTML:</p>
+    <svg id="invader" xmlns="http://www.w3.org/2000/svg" viewBox="35.4 35.4 195.8 141.8">
+        <path d="M70.9 35.4v17.8h17.7V35.4H70.9zm17.7 17.8v17.7H70.9v17.7H53.2V53.2H35.4V124h17.8v17.7h17.7v17.7h17.7v-17.7h88.6v17.7h17.7v-17.7h17.7V124h17.7V53.2h-17.7v35.4h-17.7V70.9h-17.7V53.2h-17.8v17.7H106.3V53.2H88.6zm88.6 0h17.7V35.4h-17.7v17.8zm17.7 106.2v17.8h17.7v-17.8h-17.7zm-124 0H53.2v17.8h17.7v-17.8zm17.7-70.8h17.7v17.7H88.6V88.6zm70.8 0h17.8v17.7h-17.8V88.6z" />
+        <path d="M319 35.4v17.8h17.6V35.4H319zm17.6 17.8v17.7H319v17.7h-17.7v17.7h-17.7V159.4h17.7V124h17.7v35.4h17.7v-17.7H425.2v17.7h17.7V124h17.7v35.4h17.7V106.3h-17.7V88.6H443V70.9h-17.7V53.2h-17.7v17.7h-53.2V53.2h-17.7zm88.6 0h17.7V35.4h-17.7v17.8zm0 106.2h-35.5v17.8h35.5v-17.8zm-88.6 0v17.8h35.5v-17.8h-35.5zm0-70.8h17.7v17.7h-17.7V88.6zm70.9 0h17.7v17.7h-17.7V88.6z" />
+    </svg>
+    <p>The SVG is now part of the DOM.</p> -->
+
+
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+        <defs>
+            <symbol id="icon-folder" viewBox="0 0 32 32">
+                <title>folder</title>
+                <path d="M14 4l4 4h14v22h-32v-26z"></path>
+            </symbol>
+            <symbol id="icon-folder-open" viewBox="0 0 32 32">
+                <title>open</title>
+                <path d="M26 30l6-16h-26l-6 16zM4 12l-4 18v-26h9l4 4h13v4z"></path>
+            </symbol>
+            <symbol id="icon-folder-plus" viewBox="0 0 32 32">
+                <title>add</title>
+                <path d="M18 8l-4-4h-14v26h32v-22h-14zM22 22h-4v4h-4v-4h-4v-4h4v-4h4v4h4v4z"></path>
+            </symbol>
+            <symbol id="icon-folder-minus" viewBox="0 0 32 32">
+                <title>remove</title>
+                <path d="M18 8l-4-4h-14v26h32v-22h-14zM22 22h-12v-4h12v4z"></path>
+            </symbol>
+            <symbol id="icon-folder-download" viewBox="0 0 32 32">
+                <title>download</title>
+                <path d="M18 8l-4-4h-14v26h32v-22h-14zM16 27l-7-7h5v-8h4v8h5l-7 7z"></path>
+            </symbol>
+            <symbol id="icon-folder-upload" viewBox="0 0 32 32">
+                <title>upload</title>
+                <path d="M18 8l-4-4h-14v26h32v-22h-14zM16 15l7 7h-5v8h-4v-8h-5l7-7z"></path>
+            </symbol>
+        </defs>
+    </svg>
+
+
+    <h1>Folder icons</h1>
+
+    <ul class="icons">
+        <li><svg>
+                <use xlink:href="#icon-folder"></use>
+            </svg></li>
+        <li><svg>
+                <use xlink:href="#icon-folder-open"></use>
+            </svg></li>
+        <li><svg>
+                <use xlink:href="#icon-folder-plus"></use>
+            </svg></li>
+        <li><svg>
+                <use xlink:href="#icon-folder-minus"></use>
+            </svg></li>
+        <li><svg>
+                <use xlink:href="#icon-folder-download"></use>
+            </svg></li>
+        <li><svg>
+                <use xlink:href="#icon-folder-upload"></use>
+            </svg></li>
+    </ul>
+
+    <svg xmlns="http://www.w3.org/2000/svg" aria-hidden="true" style="position: absolute; width: 0; height: 0; overflow: hidden;">
+        <defs>
+            <clipPath id="clip">
+                <text x="0" y="200" font-family="Arial" font-size="10em" font-weight="800">Text Clip</text>
+            </clipPath>
+        </defs>
+    </svg>
+
+    <div class="area"></div>
+
+    <svg id="invader" xmlns="http://www.w3.org/2000/svg" viewBox="35.4 35.4 195.8 141.8">
+        <!-- invader images: https://github.com/rohieb/space-invaders !-->
+        <style>/* <![CDATA[ */
+            path {
+                stroke-width: 0;
+                fill: #080;
+            }
+
+            path:hover {
+                fill: #c00;
+            }
+
+            /* ]]> */</style>
+        <path d="M70.9 35.4v17.8h17.7V35.4H70.9zm17.7 17.8v17.7H70.9v17.7H53.2V53.2H35.4V124h17.8v17.7h17.7v17.7h17.7v-17.7h88.6v17.7h17.7v-17.7h17.7V124h17.7V53.2h-17.7v35.4h-17.7V70.9h-17.7V53.2h-17.8v17.7H106.3V53.2H88.6zm88.6 0h17.7V35.4h-17.7v17.8zm17.7 106.2v17.8h17.7v-17.8h-17.7zm-124 0H53.2v17.8h17.7v-17.8zm17.7-70.8h17.7v17.7H88.6V88.6zm70.8 0h17.8v17.7h-17.8V88.6z" />
+        <path d="M319 35.4v17.8h17.6V35.4H319zm17.6 17.8v17.7H319v17.7h-17.7v17.7h-17.7V159.4h17.7V124h17.7v35.4h17.7v-17.7H425.2v17.7h17.7V124h17.7v35.4h17.7V106.3h-17.7V88.6H443V70.9h-17.7V53.2h-17.7v17.7h-53.2V53.2h-17.7zm88.6 0h17.7V35.4h-17.7v17.8zm0 106.2h-35.5v17.8h35.5v-17.8zm-88.6 0v17.8h35.5v-17.8h-35.5zm0-70.8h17.7v17.7h-17.7V88.6zm70.9 0h17.7v17.7h-17.7V88.6z" />
+        <script>/* <![CDATA[ */
+            const
+                viewX = [35.4, 283.6],
+                animationDelay = 500,
+                invader = document.getElementById('invader');
+            let frame = 0;
+            setInterval(() => {
+                frame = ++frame % 2;
+                invader.viewBox.baseVal.x = viewX[frame];
+            }, animationDelay);
+            /* ]]> */</script>
+    </svg>
+
+    <script src="" async defer></script>
+</body>
+
+</html>
